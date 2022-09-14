@@ -85,6 +85,100 @@ h1 {
   color: white;
 }
 </style>
+    
+
+#hcg-slider-1 .hcg-slide-container {
+	width: auto;
+	height: auto;
+}
+.hcg-slider {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.hcg-slide-container {
+	max-width: 100%;
+	display: inline-block;
+	position: relative;
+}
+.hcg-slides {
+	display: none;
+	text-align: center;
+	overflow: hidden;
+}
+.hcg-slides img {
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	border-radius: 5px;
+	border: solid 1px #a0a0a0;
+	vertical-align: middle;
+}
+.hcg-slide-text {
+	color: #ffffff;
+	font-size: 14px;
+	padding: 3px 5px;
+	position: absolute;
+	bottom: 0;
+	border-radius: 5px;
+	left: 50%;
+	text-align: center;
+	text-shadow: 0 0 2px #000;
+	background-color: rgba(255,255,255,0.30);
+	display: inline-block;
+	transform: translate(-50%, -5px);
+}
+.hcg-slide-prev, .hcg-slide-next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	text-decoration: none;
+}
+.hcg-slide-next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.hcg-slide-prev {
+	left: 0;
+	border-radius: 0 3px 3px 0;
+}
+.hcg-slide-prev:hover, .hcg-slide-next:hover {
+	background-color: #000c;
+}
+.hcg-slide-dot-control {
+	margin-top: 10px;
+	text-align: center;
+}
+.hcg-slide-dot {
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+}
+.hcg-slide-dot.dot-active {
+	background-color: #717171;
+}
+.hcg-slide-number {
+	color: #ffffff;
+	font-size: 12px;
+	padding: 4px 7px;
+	position: absolute;
+	border-radius: 5px;
+	top: 5px;
+	left: 5px;
+	background-color: rgba(255,255,255,0.30);
+}
+    
 </head>
 <body>
 
@@ -93,6 +187,16 @@ h1 {
 
 <h1>ssl_sing_id</h1>
 <hr>
+    
+<div id="hcg-slider-1" class="hcg-slider">
+<div class="hcg-slide-container">
+	<div class="hcg-slider-body">
+		<a class="hcg-slides animated" style="display:block">
+			<span class="hcg-slide-number">1/5</span>
+			<img src="https://www.html-code-generator.com/images/slider/5.png" alt="image 5">
+			<span class="hcg-slide-text">image 5</span>
+		</a>
+	</div>
 
 <h2>Speaker embeddings</h2>
 
@@ -314,6 +418,86 @@ for (var i = 0; i < btns.length; i++) {
 }
 </script>
 
+
+(function(){
+//If you want to include more images, add the link name and URL of the image in the array list below.
+	let images_list = [
+		{"url":"https://www.html-code-generator.com/images/slider/5.png","name":"image 5","link":""},
+		{"url":"https://html-generator.com/uploads/images/2022/09/14/03985N0M4L6A0AY.png","name":"03985N0M4L6A0AY.png","link":""},
+		{"url":"https://html-generator.com/uploads/images/2022/09/14/05434P9X36DULNY.png","name":"05434P9X36DULNY.png","link":""},
+		{"url":"https://html-generator.com/uploads/images/2022/09/14/06893U8_9O_GPTR.png","name":"06893U8_9O_GPTR.png","link":""},
+		{"url":"https://html-generator.com/uploads/images/2022/09/14/08387ASUJ1WHYWJ.png","name":"08387ASUJ1WHYWJ.png","link":""},
+		{"url":"https://html-generator.com/uploads/images/2022/09/14/096533TO8SS1KDA.png","name":"096533TO8SS1KDA.png","link":""},
+		{"url":"https://html-generator.com/uploads/images/2022/09/14/11090_33HEP265T.png","name":"11090_33HEP265T.png","link":""},
+		{"url":"https://html-generator.com/uploads/images/2022/09/14/12535MZSYW8UWXD.png","name":"12535MZSYW8UWXD.png","link":""},
+		{"url":"https://html-generator.com/uploads/images/2022/09/14/143064AJBDAFN1Y.png","name":"143064AJBDAFN1Y.png","link":""},
+		{"url":"https://html-generator.com/uploads/images/2022/09/14/15745AAJGJ2GURP.png","name":"15745AAJGJ2GURP.png","link":""}
+	];
+
+	let slider_id = document.querySelector("#hcg-slider-1");
+
+	// append all images
+	let dots_div = "";
+	let images_div = "";
+	for (let i = 0; i < images_list.length; i++) {
+		// if no link without href="" tag
+		let href = (images_list[i].link == "" ? "":' href="'+images_list[i].link+'"');
+		images_div += '<a'+href+' class="hcg-slides"'+(i === 0 ? ' style="display:block"':'')+'>'+
+						'<span class="hcg-slide-number">'+(i+1)+'/'+images_list.length+'</span>'+
+						'<img src="'+images_list[i].url+'" alt="'+images_list[i].name+'">'+
+						'<span class="hcg-slide-text">'+images_list[i].name+'</span>'+
+					 '</a>';
+		dots_div += '<span class="hcg-slide-dot'+(i === 0 ? ' dot-active':'')+'" data-id="'+i+'"></span>';
+	}
+	slider_id.querySelector(".hcg-slider-body").innerHTML = images_div;
+	slider_id.querySelector(".hcg-slide-dot-control").innerHTML = dots_div;
+
+	let slide_index = 0;
+
+	let images = slider_id.querySelectorAll(".hcg-slides");
+	let dots = slider_id.querySelectorAll(".hcg-slide-dot");
+	let prev_button = slider_id.querySelector(".hcg-slide-prev");
+	let next_button = slider_id.querySelector(".hcg-slide-next");
+
+	function showSlides() {
+		if (slide_index > images.length-1) {
+			slide_index = 0;
+		}
+		if (slide_index < 0) {
+			slide_index = images.length-1;
+		}
+		for (let i = 0; i < images.length; i++) {
+			images[i].style.display = "none";
+			dots[i].classList.remove("dot-active");
+			if (i == slide_index) {
+				images[i].style.display = "block";
+				dots[i].classList.add("dot-active");
+			}
+		}
+	}
+
+	prev_button.addEventListener("click", function(event) {
+		event.preventDefault();
+		slide_index--;
+		showSlides();
+	}, false);
+
+	next_button.addEventListener("click", function(event){
+		event.preventDefault();
+		slide_index++;
+		showSlides();
+	}, false);
+
+	function dot_click(event) {
+		slide_index = event.target.dataset.id;
+		showSlides();
+	}
+
+	for (let i = 0; i < dots.length; i++) {
+		dots[i].addEventListener("click", dot_click, false);
+	}
+})();
+                                    
 </body>
 </html>
 
