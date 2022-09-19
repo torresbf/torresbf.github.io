@@ -209,23 +209,26 @@ h1 {
 <h2>Speaker embeddings</h2>
 
 <div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <!-- <button class="btn active" onclick="filterSelection('all')"> Show all</button> -->
   <button class="btn" onclick="filterSelection('ge2e')"> GE2E</button>
   <button class="btn" onclick="filterSelection('ecapa')"> ECAPA-TDNN</button>
-  <button class="btn" onclick="filterSelection('contonly')"> CONT</button>
-<button class="btn" onclick="filterSelection('unifonly')"> UNIF</button>
+  <button class="btn" onclick="filterSelection('unifonly')"> UNIF</button>
+  <button class="btn" onclick="filterSelection('conunsup')"> CONT-UNSUP</button>
+  <button class="btn" onclick="filterSelection('contsup')"> CONT-SUP</button>
+  <button class="btn" onclick="filterSelection('contnopre')"> CONT-NOPRE</button>
 <button class="btn" onclick="filterSelection('vicreg')"> VICREG</button>
-<button class="btn" onclick="filterSelection('contreg')"> CONT-REG</button>
+<button class="btn" onclick="filterSelection('contreg')"> CONT-VCREG</button>
 <button class="btn" onclick="filterSelection('wav2vec')"> Wav2Vec2.0</button>
 <button class="btn" onclick="filterSelection('contform')"> CONT-FORM</button>
-<button class="btn" onclick="filterSelection('contsame')"> CONT-SAME</button>
+<button class="btn" onclick="filterSelection('contattform')"> CONT-ATT-FORM</button>
+
 </div>
 
 <!-- Portfolio Gallery Grid -->
 <div class="row">
   <div class="column ge2e">
     <div class="content">
-      <div id="hcg-slider-2" class="hcg-slider">
+      <div id="hcg-slider-ge2e-vctk" class="hcg-slider">
         <div class="hcg-slide-container">
           <div class="hcg-slider-body">
             <a class="hcg-slides animated" style="display:block">
@@ -246,7 +249,7 @@ h1 {
 
   <div class="column ge2e">
     <div class="content">
-      <div id="hcg-slider-3" class="hcg-slider">
+      <div id="hcg-slider-ge2e-vocalset" class="hcg-slider">
         <div class="hcg-slide-container">
           <div class="hcg-slider-body">
             <a class="hcg-slides animated" style="display:block">
@@ -283,18 +286,6 @@ h1 {
   </div>
 
 
-  <div class="column contonly">
-    <div class="content">
-      <img src="images/testgif.gif" alt="Car" style="width:100%">
-      <h4>Girl</h4>
-    </div>
-  </div>
-  <div class="column contonly">
-    <div class="content">
-    <img src="images/testgif.gif" alt="Car" style="width:100%">
-      <h4>Man</h4>
-    </div>
-  </div>
     
     
    <div class="column unifonly">
@@ -310,6 +301,51 @@ h1 {
     </div>
   </div>
     
+
+  
+  <div class="column contunsup">
+    <div class="content">
+      <img src="images/testgif.gif" alt="Car" style="width:100%">
+      <h4>Girl</h4>
+    </div>
+  </div>
+  <div class="column contsup">
+    <div class="content">
+    <img src="images/testgif.gif" alt="Car" style="width:100%">
+      <h4>Man</h4>
+    </div>
+  </div>
+
+
+  <div class="column contsup">
+    <div class="content">
+      <img src="images/testgif.gif" alt="Car" style="width:100%">
+      <h4>Girl</h4>
+    </div>
+  </div>
+  <div class="column contsup">
+    <div class="content">
+    <img src="images/testgif.gif" alt="Car" style="width:100%">
+      <h4>Man</h4>
+    </div>
+  </div>
+
+
+  <div class="column contnopre">
+    <div class="content">
+      <img src="images/testgif.gif" alt="Car" style="width:100%">
+      <h4>Girl</h4>
+    </div>
+  </div>
+  <div class="column contnopre">
+    <div class="content">
+    <img src="images/testgif.gif" alt="Car" style="width:100%">
+      <h4>Man</h4>
+    </div>
+  </div>
+
+
+
    <div class="column vicreg">
     <div class="content">
       <img src="images/testgif.gif" alt="Car" style="width:100%">
@@ -374,14 +410,16 @@ h1 {
       <h4>12th layer</h4>
     </div>
   </div>
+
+
     
-  <div class="column contsame">
+  <div class="column contform">
     <div class="content">
       <img src="images/testgif.gif" alt="Car" style="width:100%">
       <h4>Girl</h4>
     </div>
   </div>
-  <div class="column contsame">
+  <div class="column contform">
     <div class="content">
     <img src="images/testgif.gif" alt="Car" style="width:100%">
       <h4>Man</h4>
@@ -389,13 +427,13 @@ h1 {
   </div>
     
    
-   <div class="column contform">
+   <div class="column contattform">
     <div class="content">
       <img src="images/testgif.gif" alt="Car" style="width:100%">
       <h4>Girl</h4>
     </div>
   </div>
-  <div class="column contform">
+  <div class="column contattform">
     <div class="content">
     <img src="images/testgif.gif" alt="Car" style="width:100%">
       <h4>Man</h4>
@@ -493,7 +531,7 @@ for (var i = 0; i < btns.length; i++) {
 		{"url":"images/testgif.gif","name":"15745AAJGJ2GURP.png","link":""}]
 	];
 
-  let sliders_name = ["#hcg-slider-1", "#hcg-slider-2", "#hcg-slider-3"];
+  let sliders_name = ["#hcg-slider-ge2e-vctk", "#hcg-slider-ge2e-vocalset", "#hcg-slider-3"];
 
   for (let j = 0; j < sliders_name.length; j++) {
     slider_name = sliders_name[j];
