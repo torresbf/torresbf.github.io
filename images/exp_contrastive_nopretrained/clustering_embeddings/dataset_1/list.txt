@@ -1,0 +1,5 @@
+{"url": "images/exp_contrastive_nopretrained/clustering_embeddings/dataset_1/exp_contrastive_nopretrained/clustering_embeddings/test_plot_loader_1_embeddings_cluster_ep_49_drawmode_same_group.png" , "name": "Epoch_49", "link":""},
+{"url": "images/exp_contrastive_nopretrained/clustering_embeddings/dataset_1/exp_contrastive_nopretrained/clustering_embeddings/test_plot_loader_1_embeddings_cluster_ep_99_drawmode_same_group.png" , "name": "Epoch_99", "link":""},
+{"url": "images/exp_contrastive_nopretrained/clustering_embeddings/dataset_1/exp_contrastive_nopretrained/clustering_embeddings/test_plot_loader_1_embeddings_cluster_ep_199_drawmode_same_group.png" , "name": "Epoch_199", "link":""},
+{"url": "images/exp_contrastive_nopretrained/clustering_embeddings/dataset_1/exp_contrastive_nopretrained/clustering_embeddings/test_plot_loader_1_embeddings_cluster_ep_299_drawmode_same_group.png" , "name": "Epoch_299", "link":""},
+{"url": "images/exp_contrastive_nopretrained/clustering_embeddings/dataset_1/exp_contrastive_nopretrained/clustering_embeddings/test_plot_loader_1_embeddings_cluster_ep_399_drawmode_same_group.png" , "name": "Epoch_399", "link":""},
