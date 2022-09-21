@@ -1,4 +1,5 @@
 {"url": "images/exp_contrastive_ecapa/clustering_embeddings/dataset_1/test_plot_loader_1_embeddings_cluster_ep_0_drawmode_same_group.png" , "name": "Epoch_0", "link":""},
+{"url": "images/exp_contrastive_ecapa/clustering_embeddings/dataset_1/test_plot_loader_1_embeddings_cluster_ep_0_drawmode_same_group.png" , "name": "Epoch_0", "link":""},
 {"url": "images/exp_contrastive_ecapa/clustering_embeddings/dataset_1/test_plot_loader_1_embeddings_cluster_ep_11_drawmode_same_group.png" , "name": "Epoch_11", "link":""},
 {"url": "images/exp_contrastive_ecapa/clustering_embeddings/dataset_1/test_plot_loader_1_embeddings_cluster_ep_24_drawmode_same_group.png" , "name": "Epoch_24", "link":""},
 {"url": "images/exp_contrastive_ecapa/clustering_embeddings/dataset_1/test_plot_loader_1_embeddings_cluster_ep_49_drawmode_same_group.png" , "name": "Epoch_49", "link":""},

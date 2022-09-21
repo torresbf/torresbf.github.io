@@ -1,3 +1,5 @@
+{"url": "images/exp_vicreg/clustering_embeddings/dataset_0/test_plot_loader_0_embeddings_cluster_ep_0_drawmode_same_group.png" , "name": "Epoch_0", "link":""},
+{"url": "images/exp_vicreg/clustering_embeddings/dataset_0/test_plot_loader_0_embeddings_cluster_ep_0_drawmode_same_group.png" , "name": "Epoch_0", "link":""},
 {"url": "images/exp_vicreg/clustering_embeddings/dataset_0/test_plot_loader_0_embeddings_cluster_ep_274_drawmode_same_group.png" , "name": "Epoch_274", "link":""},
 {"url": "images/exp_vicreg/clustering_embeddings/dataset_0/test_plot_loader_0_embeddings_cluster_ep_299_drawmode_same_group.png" , "name": "Epoch_299", "link":""},
 {"url": "images/exp_vicreg/clustering_embeddings/dataset_0/test_plot_loader_0_embeddings_cluster_ep_300_drawmode_same_group.png" , "name": "Epoch_300", "link":""},
